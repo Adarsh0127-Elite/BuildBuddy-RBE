@@ -11,7 +11,7 @@ mkdir -p "$RBE_ROOT"
 # Only download and extract if not already present
 if [ ! -d "$RBE_RECLIENT_DIR" ]; then
     echo "⬇️  Downloading reclient..."
-    wget -q -O "$RBE_RECLIENT_ZIP" "https://github.com/userariii/BuildBuddy-RBE/releases/download/v1/client-linux-amd64.zip"
+    wget -q -O "$RBE_RECLIENT_ZIP" "https://github.com/Adarsh0127-Elite/BuildBuddy-RBE/releases/download/v1/client-linux-amd64.zip"
 
     echo "📦 Extracting reclient..."
     unzip -q "$RBE_RECLIENT_ZIP" -d "$RBE_RECLIENT_DIR"
@@ -36,7 +36,7 @@ if [ ! -f "$CONFIG_FILE" ]; then
 
 BB_INSTANCE="your-instance.buildbuddy.io"
 BB_API_KEY="xxx"
-NINJA_REMOTE_NUM_JOBS=72
+NINJA_REMOTE_NUM_JOBS=712
 EOF
     echo "   Please edit the new 'rbe.conf' file with your details and source this script again."
     return 1 2>/dev/null || exit 1
@@ -63,7 +63,7 @@ fi
 # --- Enable RBE and General Settings ---
 export USE_RBE=1
 export RBE_DIR="$RBE_RECLIENT_DIR"
-export NINJA_REMOTE_NUM_JOBS=${NINJA_REMOTE_NUM_JOBS:-72} # Use default if not set
+export NINJA_REMOTE_NUM_JOBS=${NINJA_REMOTE_NUM_JOBS:-712} # Use default if not set
 
 # --- BuildBuddy Connection Settings ---
 export RBE_service="${BB_INSTANCE}:443"

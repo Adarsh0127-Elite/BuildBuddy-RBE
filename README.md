@@ -9,7 +9,7 @@ This guide will help you quickly set up **BuildBuddy Remote Build Execution (RBE
 Clone the setup repository into your home directory under a hidden folder `.rbe`:
 
 ```bash
-git clone https://github.com/userariii/BuildBuddy-RBE.git ~/.rbe
+git clone https://github.com/Adarsh0127-Elite/BuildBuddy-RBE.git ~/.rbe
 ```
 
 ---
@@ -58,7 +58,7 @@ To use BuildBuddy Remote Build Execution (RBE), you need an API key and organiza
    ```ini
    BB_INSTANCE="your-org.buildbuddy.io"
    BB_API_KEY="paste-your-api-key-here"
-   NINJA_REMOTE_NUM_JOBS=72
+   NINJA_REMOTE_NUM_JOBS=712
    ```
 
 > Make sure the `BB_INSTANCE` matches your org URL (e.g., `myteam.buildbuddy.io`).
