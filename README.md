@@ -67,6 +67,11 @@ To use BuildBuddy Remote Build Execution (RBE), you need an API key and organiza
 
 ---
 
+3. Setup RBE:
+   ```bash
+   ./.rbe/setup-rbe.sh
+   ```
+
 ## ✅ Done!
 
 Now every new terminal session will:
